@@ -1,0 +1,35 @@
+{
+    "name": "Acxiom",
+    "url": "https://www.acxiom.com/optout/",
+    "iFrame": "frameresize",
+    
+    "Actions": 
+    {
+        "segmentMenu": ["click", "xpath", "//*[@id=\"MainPanel\"]/div/div/div/div[1]/table/tbody/tr/td[1]/div/div[1]"],
+        "mailOption":  ["click", "xpath", "//*[@id=\"MainPanel\"]/div/div/div/div[1]/table/tbody/tr/td[1]/div/div[2]/div[2]/div[1]"],
+        "phoneOption": ["click", "xpath", "//*[@id=\"MainPanel\"]/div/div/div/div[1]/table/tbody/tr/td[1]/div/div[2]/div[2]/div[2]"],
+        "emailOption": ["click", "xpath", "//*[@id=\"MainPanel\"]/div/div/div/div[1]/table/tbody/tr/td[1]/div/div[2]/div[2]/div[3]"],
+
+        "Identity": ["dropmenu", "ID", "Identity", "Submitter"],
+        "State":    ["dropmenu", "ID", "State", "USER State"],
+
+        "First":    ["text",  "name", "FirstName", "USER First"],
+        "Middle":   ["text",  "name", "MiddleName", "USER Middle"],
+        "Last":     ["text",  "name", "LastName", "USER Last"],
+        "Address":  ["text",  "name", "Street1", "USER Address"],
+        "City":     ["text",  "name", "City", "USER City"],
+        "AreaCode": ["text",  "name", "AreaCode", "USER AreaCode"],
+        "Zip":      ["text",  "name", "Zip", "USER Zip"],
+        "Phone":    ["text",  "name", "PhoneNumber", "USER Phone"],
+        "Email":    ["text",  "name", "Email", "USER Email"],
+
+        "submit1": ["click", "ID", "AddName2"],
+        "submit2": ["click", "ID", "AddEmail2"],
+        "submit3": ["click", "ID", "AddPhone2"],
+        "submit4": ["click", "ID", "AddAddress2"],
+        "submit5": ["click", "ID", "SelectCorrected2"],
+
+        "finalsubmit": ["click", "xpath", "//*[@id=\"SubmitButton2\"]"] 
+        }
+
+    }
